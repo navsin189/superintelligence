@@ -1,0 +1,21 @@
+[project]
+name = "si"
+version = "0.1.0"
+description = "This Project is to test and understand how MCP works."
+readme = "README.md"
+authors = [
+    { name = "Naveen Singh", email = "navsin189@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "httpx>=0.28.1",
+    "mcp[cli]>=2.3.0",
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+si = "si:main"
+
+[build-system]
+requires = ["uv_build>=0.12.18,<0.13.0"]
+build-backend = "uv_build"
